@@ -10,9 +10,25 @@ namespace appVentas.DAO
 {
     class ClsDCliente
     {
+        ////metodo tipo list tipo tabla cliente contiene las propiedades necesarias para describir la db
+        //public List<tb_cliente> CargarComboCliente()
+        //{
+        //    List<tb_cliente> tb = new List<tb_cliente>();
+        //    using (sistema_ventasEntities db = new sistema_ventasEntities())
+        //    {
+        //        tb = db.tb_cliente.ToList();
+
+
+        //    }
+
+        //        return tb;
+        //}
+
+
+        //Método para cargar los datos en el data grid y el combobox
         public List<tb_cliente> CargarDatosTbClientes()
         {
-            List<tb_cliente> Lista;
+            List<tb_cliente> Lista = new List<tb_cliente>();
 
             using (sistema_ventasEntities db = new sistema_ventasEntities())
             {
@@ -21,7 +37,12 @@ namespace appVentas.DAO
 
             return Lista;
         }
-        public void InsertarCliente(tb_cliente cliente) {
+
+
+
+
+        public void InsertarCliente(tb_cliente cliente)
+        {
             try
             {
                 using (sistema_ventasEntities db = new sistema_ventasEntities())
@@ -37,12 +58,14 @@ namespace appVentas.DAO
                     MessageBox.Show("Dato Agregado");
                 }
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.ToString());
             }
 
         }
-        public void ActualizarCliente(tb_cliente cliente1) {
+        public void ActualizarCliente(tb_cliente cliente1)
+        {
             try
             {
                 using (sistema_ventasEntities db = new sistema_ventasEntities())
@@ -59,11 +82,12 @@ namespace appVentas.DAO
 
                 }
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.ToString());
-            
+
             }
-           
+
         }
         public void EliminarCliente(int Id)
         {
@@ -83,12 +107,14 @@ namespace appVentas.DAO
                 }
 
             }
-            catch (Exception ex){
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.ToString());
-            
+
             }
-        
+
         }
+
     }
 
 }

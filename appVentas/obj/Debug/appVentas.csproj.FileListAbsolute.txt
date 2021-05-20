@@ -40,3 +40,4 @@ C:\Users\kembe\OneDrive\Documentos\GitHub\SistemaVentas\appVentas\obj\Debug\appV
 C:\Users\kembe\OneDrive\Documentos\GitHub\SistemaVentas\appVentas\obj\Debug\appVentas.csproj.CopyComplete
 C:\Users\kembe\OneDrive\Documentos\GitHub\SistemaVentas\appVentas\obj\Debug\appVentas.exe
 C:\Users\kembe\OneDrive\Documentos\GitHub\SistemaVentas\appVentas\obj\Debug\appVentas.pdb
+C:\Users\kembe\OneDrive\Documentos\GitHub\SistemaVentas\appVentas\obj\Debug\appVentas.VISTA.FrmFiltroProduct.resources

@@ -32,9 +32,10 @@ namespace appVentas.VISTA
 
                 }
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.ToString());
-            
+
             }
 
         }
@@ -42,9 +43,9 @@ namespace appVentas.VISTA
         private void FrmCliente_Load(object sender, EventArgs e)
         {
 
-            Carga();   
+            Carga();
 
-         }
+        }
 
       
 
@@ -59,12 +60,13 @@ namespace appVentas.VISTA
                 tb.duiCliente = txtDuiCliente.Text;
 
                 cls.InsertarCliente(tb);
-                Carga();
+                //Carga();
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.ToString());
-            
-            
+
+
             }
         }
 
@@ -80,22 +82,24 @@ namespace appVentas.VISTA
                 tb1.duiCliente = txtDuiCliente.Text;
 
                 dCliente.ActualizarCliente(tb1);
-                Carga();
+                //Carga();
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.ToString());
             }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            try {
-            ClsDCliente clsD = new ClsDCliente();
-         
-            clsD.EliminarCliente(Convert.ToInt32(txtIdCliente.Text));
-            Carga();
+            try
+            {
+                ClsDCliente clsD = new ClsDCliente();
+
+                clsD.EliminarCliente(Convert.ToInt32(txtIdCliente.Text));
+                //Carga();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
 
@@ -120,6 +124,11 @@ namespace appVentas.VISTA
             catch (Exception ex) {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void dtgCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -68,6 +68,7 @@ namespace appVentas.VISTA
             this.dtgCliente.Size = new System.Drawing.Size(570, 259);
             this.dtgCliente.TabIndex = 0;
             this.dtgCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCliente_CellClick);
+            this.dtgCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCliente_CellContentClick);
             // 
             // Column1
             // 

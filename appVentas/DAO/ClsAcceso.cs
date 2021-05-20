@@ -23,7 +23,7 @@ namespace appVentas.DAO
                 //consulta devuelve tipo List-- y List permite utilizar Count
                 if(consulta.Count() > 0){
 
-                //Mayor que cero que nos traiga lo q esta en la base de datos y se vuelve 1
+                //Mayor que cero que nos traiga lo que esta en la base de datos y se vuelve 1
                     variabledeacceso = 1;
 
                 }

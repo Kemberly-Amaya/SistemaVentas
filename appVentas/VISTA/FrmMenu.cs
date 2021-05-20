@@ -17,11 +17,16 @@ namespace appVentas.VISTA
             InitializeComponent();
         }
 
+        //abrir como formulario externo
+        //Es estático porque cuando se  busque un producto se va necesitar acceder a una sola instancia es decir a una variable
+        // publica porque queremos acceder a ella
+        //estatica porque no se quiere modificar su valor
+        public static FrmVenta frmVenta = new FrmVenta();
+
         private void irVentaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
-            frm.MdiParent = this;
-            frm.Show();
+            frmVenta.Show();
+
         }
 
         private void irClienteToolStripMenuItem_Click(object sender, EventArgs e)

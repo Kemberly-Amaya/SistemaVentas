@@ -45,6 +45,7 @@ namespace appVentas.VISTA
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Beige;
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -72,7 +73,7 @@ namespace appVentas.VISTA
             // irVentaToolStripMenuItem
             // 
             this.irVentaToolStripMenuItem.Name = "irVentaToolStripMenuItem";
-            this.irVentaToolStripMenuItem.Size = new System.Drawing.Size(221, 44);
+            this.irVentaToolStripMenuItem.Size = new System.Drawing.Size(270, 44);
             this.irVentaToolStripMenuItem.Text = "Ir Venta";
             this.irVentaToolStripMenuItem.Click += new System.EventHandler(this.irVentaToolStripMenuItem_Click);
             // 
@@ -145,7 +146,7 @@ namespace appVentas.VISTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Snow;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(937, 870);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

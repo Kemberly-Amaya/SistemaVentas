@@ -116,6 +116,12 @@
     <Compile Include="VISTA\FrmDocumento.Designer.cs">
       <DependentUpon>FrmDocumento.cs</DependentUpon>
     </Compile>
+    <Compile Include="VISTA\FrmFiltroProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISTA\FrmFiltroProduct.Designer.cs">
+      <DependentUpon>FrmFiltroProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="VISTA\FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmDocumento.resx">
       <DependentUpon>FrmDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\FrmFiltroProduct.resx">
+      <DependentUpon>FrmFiltroProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>

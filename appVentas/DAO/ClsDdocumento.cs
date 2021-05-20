@@ -12,7 +12,7 @@ namespace appVentas.DAO
     {
         public List<tb_documento> CargarTbDocumento()
         {
-            List<tb_documento> Lista;
+            List<tb_documento> Lista =new List<tb_documento>();
 
             using (sistema_ventasEntities db = new sistema_ventasEntities())
             {
@@ -88,5 +88,15 @@ namespace appVentas.DAO
             }
 
         }
+        //public List<tb_documento> CargarComboDocumento()
+        //{
+        //    //Otro metodo para retornar un valor 
+        //    List<tb_documento> tb_Documento = new List<tb_documento>();
+        //    using (sistema_ventasEntities db = new sistema_ventasEntities())
+        //    {
+        //        tb_Documento = db.tb_documento.ToList();
+        //    }
+        //    return tb_Documento;
+        //}
     }
 }
