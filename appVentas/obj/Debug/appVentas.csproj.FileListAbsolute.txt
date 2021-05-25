@@ -26,7 +26,6 @@ C:\Users\kembe\OneDrive\Documentos\GitHub\SistemaVentas\appVentas\bin\Debug\Enti
 C:\Users\kembe\OneDrive\Documentos\GitHub\SistemaVentas\appVentas\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\kembe\OneDrive\Documentos\GitHub\SistemaVentas\appVentas\bin\Debug\EntityFramework.xml
 C:\Users\kembe\OneDrive\Documentos\GitHub\SistemaVentas\appVentas\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\kembe\OneDrive\Documentos\GitHub\SistemaVentas\appVentas\obj\Debug\appVentas.csprojAssemblyReference.cache
 C:\Users\kembe\OneDrive\Documentos\GitHub\SistemaVentas\appVentas\obj\Debug\appVentas.Form1.resources
 C:\Users\kembe\OneDrive\Documentos\GitHub\SistemaVentas\appVentas\obj\Debug\appVentas.Properties.Resources.resources
 C:\Users\kembe\OneDrive\Documentos\GitHub\SistemaVentas\appVentas\obj\Debug\appVentas.VISTA.FrmCliente.resources

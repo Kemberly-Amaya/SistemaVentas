@@ -50,7 +50,7 @@ namespace appVentas.VISTA
             // 
             // txtNombreFiltro
             // 
-            this.txtNombreFiltro.Location = new System.Drawing.Point(146, 86);
+            this.txtNombreFiltro.Location = new System.Drawing.Point(124, 69);
             this.txtNombreFiltro.Name = "txtNombreFiltro";
             this.txtNombreFiltro.Size = new System.Drawing.Size(691, 33);
             this.txtNombreFiltro.TabIndex = 1;
@@ -66,14 +66,17 @@ namespace appVentas.VISTA
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dtgFiltroDato.Location = new System.Drawing.Point(33, 147);
+            this.dtgFiltroDato.Location = new System.Drawing.Point(37, 151);
             this.dtgFiltroDato.Name = "dtgFiltroDato";
             this.dtgFiltroDato.ReadOnly = true;
             this.dtgFiltroDato.RowHeadersWidth = 62;
             this.dtgFiltroDato.RowTemplate.Height = 28;
-            this.dtgFiltroDato.Size = new System.Drawing.Size(889, 352);
+            this.dtgFiltroDato.Size = new System.Drawing.Size(900, 317);
             this.dtgFiltroDato.TabIndex = 2;
             this.dtgFiltroDato.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgFiltroDato_CellClick);
+            this.dtgFiltroDato.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgFiltroDato_CellContentClick);
+            this.dtgFiltroDato.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgFiltroDato_CellDoubleClick);
+            this.dtgFiltroDato.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtgFiltroDato_KeyDown);
             // 
             // Column1
             // 
@@ -103,7 +106,7 @@ namespace appVentas.VISTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 540);
+            this.ClientSize = new System.Drawing.Size(973, 567);
             this.Controls.Add(this.dtgFiltroDato);
             this.Controls.Add(this.txtNombreFiltro);
             this.Controls.Add(this.label1);

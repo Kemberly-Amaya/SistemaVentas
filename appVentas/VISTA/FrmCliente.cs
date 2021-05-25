@@ -60,7 +60,7 @@ namespace appVentas.VISTA
                 tb.duiCliente = txtDuiCliente.Text;
 
                 cls.InsertarCliente(tb);
-                //Carga();
+                Carga();
             }
             catch (Exception ex)
             {
@@ -82,7 +82,7 @@ namespace appVentas.VISTA
                 tb1.duiCliente = txtDuiCliente.Text;
 
                 dCliente.ActualizarCliente(tb1);
-                //Carga();
+                Carga();
             }
             catch (Exception ex)
             {
@@ -97,7 +97,7 @@ namespace appVentas.VISTA
                 ClsDCliente clsD = new ClsDCliente();
 
                 clsD.EliminarCliente(Convert.ToInt32(txtIdCliente.Text));
-                //Carga();
+                Carga();
             }
             catch (Exception ex)
             {

@@ -44,6 +44,10 @@ namespace appVentas.VISTA
 
         private void dtgFiltroDato_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+  
+        }
+        void Enviar() {
             //Crear variables
             // mediante el click seleccionar datos en la fila  y enviarlo al ormulario de venta
             //Esto es un arreglo
@@ -66,7 +70,34 @@ namespace appVentas.VISTA
             FrmMenu.frmVenta.txtCodigoProducto.Text = id;
             FrmMenu.frmVenta.txtNombreProducto.Text = nombre;
             FrmMenu.frmVenta.txtPrecio.Text = precio;
+            //Para que el usuario final no teng que realizar la accion de usar el mouse
+            FrmMenu.frmVenta.txtCantidad.Focus();
+
+
             this.Close();
+        }
+
+        private void dtgFiltroDato_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Enviar();
+        }
+
+       
+
+        private void dtgFiltroDato_KeyDown(object sender, KeyEventArgs e)
+        {
+            //Se detectara a traves de una desición
+            //e --- hace referencia a evento
+            //Keys --- teclas
+            if (e.KeyCode == Keys.Enter)
+            {
+                Enviar();
+            }
+        }
+
+        private void dtgFiltroDato_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
