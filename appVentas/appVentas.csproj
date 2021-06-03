@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="DAO\ClsAcceso.cs" />
     <Compile Include="DAO\ClsDCliente.cs" />
+    <Compile Include="DAO\ClsDDetalle.cs" />
     <Compile Include="DAO\ClsDdocumento.cs" />
     <Compile Include="DAO\ClsDProducto.cs" />
     <Compile Include="DAO\ClsDUsuario.cs" />
@@ -214,6 +215,10 @@
       <DependentUpon>sistemaventa.edmx</DependentUpon>
       <LastGenOutput>sistemaventa.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\tecnologiaDigital.jpg" />
+    <None Include="Resources\tecno2.jpg" />
+    <None Include="Resources\tecno.jpeg" />
+    <None Include="Resources\Market.jpg" />
     <None Include="Resources\5dc0a7ef0a9fd55a1d5e122bafa30b65.jpg" />
     <None Include="Resources\CasG3Xwfttnhjk6ni54L.jpg" />
     <None Include="Resources\images %281%29.jpg" />

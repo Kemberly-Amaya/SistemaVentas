@@ -75,13 +75,14 @@ namespace appVentas.VISTA
             try
             {
                 ClsDCliente dCliente = new ClsDCliente();
-                tb_cliente tb1 = new tb_cliente();
-                tb1.iDCliente = Convert.ToInt32(txtIdCliente.Text);
-                tb1.nombreCliente = txtNombreCliente.Text;
-                tb1.direccionCliente = txtDireccionCliente.Text;
-                tb1.duiCliente = txtDuiCliente.Text;
+                var tb = new tb_cliente();
+                 
+                tb.iDCliente = Convert.ToInt32(txtIdCliente.Text);
+                tb.nombreCliente = txtNombreCliente.Text;
+                tb.direccionCliente = txtDireccionCliente.Text;
+                tb.duiCliente = txtDuiCliente.Text;
 
-                dCliente.ActualizarCliente(tb1);
+                dCliente.ActualizarCliente(tb);
                 Carga();
             }
             catch (Exception ex)

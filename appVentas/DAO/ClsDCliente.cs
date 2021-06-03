@@ -26,8 +26,12 @@ namespace appVentas.DAO
 
 
         //Método para cargar los datos en el data grid y el combobox
+        //indica el tipo de dato que devolvera el mètodo
+        //Se esta creando la variable
         public List<tb_cliente> CargarDatosTbClientes()
         {
+            //al traer los registros y meterlos en una lista se vuelven objetos
+            //cada uno de los registros pasan a ser objetos de una lista
             List<tb_cliente> Lista = new List<tb_cliente>();
 
             using (sistema_ventasEntities db = new sistema_ventasEntities())
@@ -55,7 +59,7 @@ namespace appVentas.DAO
                     db.tb_cliente.Add(tb_Cliente);
                     db.SaveChanges();
 
-                    MessageBox.Show("Dato Agregado");
+                    MessageBox.Show("Exelente" + "\nSe agregó un nuevo registro");
                 }
             }
             catch (Exception ex)
@@ -78,7 +82,7 @@ namespace appVentas.DAO
                     tb.duiCliente = cliente1.duiCliente;
                     db.SaveChanges();
 
-                    MessageBox.Show("Cliente Actualizado");
+                    MessageBox.Show("Exelente" + "\nEl registro se actualizó correctamente");
 
                 }
             }
